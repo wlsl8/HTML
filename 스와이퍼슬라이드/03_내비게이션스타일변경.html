@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내비게이션스타일변경</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/03.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".sec01-swiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            }); 
+        }; //script end
+    </script>
+</head>
+
+<body>
+    <section class="section-01">
+        <div class="swiper sec01-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image-10.jpg" alt="">
+                </div><!-- swiper slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-11.jpg" alt="">
+                </div><!-- swiper slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-12.jpg" alt="">
+                </div><!-- swiper slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-13.jpg" alt="">
+                </div><!-- swiper slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-14.jpg" alt="">
+                </div><!-- swiper slide end -->
+            </div><!-- swiper wrapper end -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div><!-- swiper end -->
+    </section><!-- section-01 end -->
+</body>
+
+</html>

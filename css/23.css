@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    background-color: antiquewhite;
+    margin: 50px 0;
+    padding: 50px;
+}
+section h2{
+    margin-bottom: 40px;
+}
+section .list{
+    background-color: rgb(197, 228, 247);
+}
+section .list .item{
+    background-color: rgb(25, 125, 191);
+    border: 1px solid black;
+}
+.flex-01 .list{
+    display: flex;
+    justify-content: space-evenly;
+    /* center ->가운데 배치
+    flex-end ->오른쪽 끝 배치
+    flex-start(기본값) ->왼쪽 끝 배치
+    space-around -> 아이템과 아이템 사이 간격 값의 2/1값이 좌우끝 간격 값
+    space-between -> 아이템이 좌우 끝에 배치되고 사이 동일 간격
+    space-evenly -> 좌우로 간격을 띄우고 아이템 동일 간격으로 배치 */
+}
+
+.flex-02 .list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*  center
+    flex-start
+    flex-end */
+}
+.flex-02 .list .item:first-child{
+    height: 300px;
+}
+.flex-02 .list .item:nth-child(2){
+    height: 200px;
+}
+.flex-02 .list .item:nth-child(3){
+    height: 100px;
+}
+
+.flex-03 .list{
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    /*   center ->가운데 배치
+    flex-end ->하단 배치
+    flex-start ->상단 배치
+    space-around -> 아이템과 아이템 사이 간격 값의 2/1값이 상하끝 간격 값
+    space-between -> 아이템이 상하 끝에 배치되고 사이 동일 간격
+    space-evenly -> 상하로 간격을 띄우고 아이템 동일 간격으로 배치 */
+}
+.flex-03 .list  .item{
+    width: 100%;
+}
+
+.flex-04 .list {
+    display: flex;
+}
+.flex-04 .list .item:first-child{
+    order: 1;
+}
+.flex-04 .list .item:last-child{
+    order: -2;
+}
+
+.flex-05 .list{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* justify-content => 수직(세로)정렬
+    align-content => 수평(가로)정렬 */
+}
+
+.cj{
+    width: 350px;
+    height: 450px;
+    background-color: beige;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cj strong{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(92, 195, 161);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+}

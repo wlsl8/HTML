@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형</title>
+    <link rel="stylesheet" href="lib/fullpage.css">
+    <link rel="stylesheet" href="css/02.css">
+    <script src="lib/fullpage.js"></script>
+    <script>
+        window.onload = () => {
+            var myFullpage = new fullpage('#fullpage', {
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage'],
+                navigation: true,
+                navigationTooltips: ['Page 1', 'Page 2', 'Any text!'],
+                showActiveTooltip: true,
+                menu: '#menu',
+                responsiveWidth: 900,
+                afterResponsive: function (isResponsive) {
+
+                }
+
+            });
+
+        };//
+    </script>
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section fp-auto-height-responsive" id="section0">
+            <div class="intro">
+                <h1>Section 1</h1>
+                <p>
+                    Use the `navigationTooltips` option to use a text for each of the bullets in the navigation element.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nostrum accusamus autem molestias
+                    atque cumque aliquid beatae sapiente. Veritatis, facilis repellendus dolores atque vero eos a
+                    ducimus veniam. Voluptas, corrupti.</p>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <h1>Section 2</h1>
+        </div>
+        <div class="section" id="section2">
+            <h1>Section 3</h1>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지도</title>
+    <link rel="stylesheet" href="css/32.css">
+</head>
+<body>
+    <section class="google">
+        <h2>구글지도</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52197.28567677626!2d129.03799310258253!3d35.14838102727752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ecf3f8706405%3A0x2aa472e15127946b!2z6re466aw7Lu07ZOo7YSw7JWE7Lm0642w66-4IOqyveyEseuMgOygkA!5e0!3m2!1sko!2skr!4v1754982504060!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section><!-- google end -->
+
+    <section class="kakao">
+        <h2>카카오지도</h2>
+        <!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1754983247119" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1754983247119",
+		"key" : "6urdbe2czxb",
+		"mapWidth" : "500",
+		"mapHeight" : "300"
+	}).render();
+</script>
+    </section><!-- kakao end -->
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로딩페이지</title>
+    <link rel="stylesheet" href="css/스크립트26.css">
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.loading').addClass('active');
+
+            //setTimeout() => 일정시간 뒤에 실행
+            
+            /* setTimeout(function(){
+                //시간뒤에 실행될 코드
+            }, 시간); */
+            setTimeout(function(){
+                $('.loading').slideUp()
+            }, 3000);
+        });// end
+    </script>
+</head>
+<body>
+    <div class="loading">
+        <div>
+            <span>로</span>
+            <span>딩</span>
+            <span>중</span>
+            <span>🎸</span>
+        </div><!-- .loading end -->
+    </div>
+    <div id="wrap">
+        <header class="header">헤더</header>
+        <main class="main">메인콘텐츠</main>
+        <footer class="footer">푸터</footer>
+    </div><!-- #wrap end -->
+</body>
+</html>

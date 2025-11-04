@@ -1,0 +1,261 @@
+@charset "utf-8";
+@import url('../font/Pretendard/stylesheet.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #141A24;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    color: #fff;
+}
+
+.header{
+    width: 1920px;
+    height: 72px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.header .inner{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 18px 192px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner .logo img{
+    width: 162px;
+    height: 36px;
+    object-fit: contain;
+}
+.header .inner .menu_open{
+    width: 35px;
+    height: 29px;
+    background-color: none;
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    cursor: pointer;
+}
+.header .inner .nav{
+    background-color: #262F3C;
+    width: 400px;
+}
+.header .inner .nav .menu_close{
+    display: none;
+}
+.header .inner .nav .gnb{
+    display: none;
+    color: #91959f;
+    font-size: 20px;
+    padding: 50px 30px;
+}
+.header .inner .nav .gnb:first-of-type li:last-child{
+    border-bottom: 1px solid #91959f;
+}
+
+
+.main .main_visual{
+    position: relative;
+    margin-top: -72px;
+    height: 960px;
+}
+.main .main_visual video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.main .main_visual .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main .main_visual .text h2{
+    font-size: 95px;
+    font-weight: bold;
+}
+.main .main_visual .text p{
+    font-size: 40px;
+    font-weight: 300;
+}
+.main .main_visual .visual_btn{
+    width: 228px;
+    height: 72px;
+    border-radius: 10px;
+    background-color: #0078FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 60px;
+    right: 192px;
+}
+.main .main_visual .visual_btn img{
+    width: 18px;
+    height: 21px;
+    object-fit: cover;
+    margin-right: 9.5px;
+    line-height: 72px;
+}
+.main .main_visual .visual_btn span{
+    font-size: 20px;
+    line-height: 72px;
+}
+
+.main .section-01{
+    position: relative;
+    width: 1920px;
+    margin: 0 auto;
+}
+.section-01 .inner h3{
+    font-size: 37px;
+    font-weight: 100;
+    margin-top: 160px;
+}
+.section-01 .inner strong{
+    font-size: 37px;
+    font-weight: bold;
+}
+.section-01 .inner .slides .item{
+    display: none;
+    position: relative;
+    margin-top: 96px;
+}
+.section-01 .inner .slides .item.active{
+    display: block;
+}
+.section-01 .inner .slides .list .item img{
+    width: 1012px;
+    height: 524px;
+    object-fit: cover;
+}
+.section-01 .inner .slides .list .item .text{
+    position: absolute;
+    top: 48px;
+    left: 48px;
+}
+.section-01 .inner .slides .list .item .text strong{
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.section-01 .inner .slides .list .item .text p{
+    font-size: 18px;
+    font-weight: 100;
+}
+.section-01 .inner .slides .slide_navigation{
+    width: 952px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: none;
+    border: none;
+}
+
+.section-02{
+    width: 1920px;
+    margin: 0 auto;
+}
+.section-02 .inner h3{
+    margin-top: 160px;
+    margin-bottom: 96px;
+    font-size: 37px;
+    font-weight: 100;
+}
+.section-02 .inner h3 strong{
+    font-weight: bold;
+}
+
+.section-02 .inner .list{
+    width: 1013px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+.section-02 .inner .list .item{
+    position:  relative;
+}
+.section-02 .inner .list .item img{
+    width: 488px;
+    height: 647px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.section-02 .inner .list .item .text_wrap .text{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+.section-02 .inner .list .item .text_wrap .text strong{
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.section-02 .inner .list .item .text_wrap .text p{
+    font-size: 18px;
+    font-weight: 100;
+}
+.section-02 .inner .list .item .item_btn img{
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+}
+.section-02 .inner .list .item .item_btn .before:hover .after{
+    display: block;
+}
+.section-02 .inner .list .item .item_btn .after{
+    display: none;
+}
+
+.section-03{
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+.section-03 img{
+    margin-top: 160px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.section-03 .text_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section-03 .text_wrap strong{
+    font-size: 33px;
+    font-weight: bold;
+}
+.section-03 .text_wrap .btn{
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.section-03 .text_wrap .btn span{
+    font-size: 20px;
+}

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.sectiontitle {
+    width: 1440px;
+    margin: 0 auto;
+}
+.sectiontitle .title-top{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+}
+.sectiontitle .title-top .item:first-child{
+    width: 455px;
+    height: 455px;
+    border-radius: 10%;
+}
+.sectiontitle .title-top .item:first-child .text{
+    text-align: center;
+}
+.sectiontitle .title-top .item:first-child .text h2{
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.sectiontitle .title-top .item:first-child .text p{
+    font-size: 22px;
+}
+.sectiontitle .title-top:first-child{
+    border: 1px solid #333;
+    display: block;
+    align-items: center;
+
+}
+.sectiontitle .title-bottom{
+    display: flex;
+    gap: 36px;
+    width: 702px;
+    height: 455px;
+    border-radius: 10%;
+}
+.sectiontitle .title-bottom .item:first-child{
+    position: relative;
+}
+.sectiontitle .title-bottom .item:first-child .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+.sectiontitle .title-bottom .item:first-child .text p{
+    font-size: 18px;
+    color: white;
+}
+.sectiontitle .title-bottom .item:first-child .text strong{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #82aa38;
+        }
+
+        h1 {
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+        }
+        /* 화면의 크기가 640 이상, 960 이하일 때만 적용 가능 */
+        @media screen and (min-width: 640px) and (max-width: 960px) {
+            body {
+                background-color: #07266e;
+            }
+
+            h1 {
+                font-size: 40px;
+                color: #fff;
+                justify-content: flex-start;
+            }
+        }
+        /* 화면의 크기가 639 이하일 때만 적용 가능 */
+        @media screen and (max-width: 639px) {
+            body{
+                background-color: #d24b4b;
+            }
+            h1{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>반응형 미디어쿼리</h1>
+</body>
+
+</html>

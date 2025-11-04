@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import url('reset.css');
+
+
+.section{
+    background: url('../img/이미지1.jpg') center center / cover no-repeat;
+    padding: 100px 0;
+}
+.section .inner{
+    max-width: 1200px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* 타이틀 스크롤 위치 고정 */
+}
+.section .inner h3{
+    position: sticky;
+    top: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+.section .inner .list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.section .inner .list .item{
+    background-color: #fff;
+    width: 300px;
+    padding: 30px;
+}
+.section .inner .list .item img.item_image{
+    display: none;
+}
+.section .inner .list .item .text h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.section .inner .list .item .text p{
+    line-height: 1.3;
+}

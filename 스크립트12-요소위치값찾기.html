@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소위치값찾기</title>
+    <link rel="stylesheet" href="css/스크립트12.css">
+    <script>
+        window.onload = () => {
+            let section1 = document.getElementsByClassName('section-01')[0];
+            let topBtn = document.getElementsByClassName('top_btn')[0];
+
+            //section1이 화면에서 떨어진 y축 값 찾기
+            //offsetTop; y축 값 찾기
+            console.log(section1.offsetTop)
+
+            window.addEventListener('scroll', () => {
+                let scrollBar = window.scrollY;
+                //스크롤바의 값이 첫번째섹션의 y축 값보다 더 클때 실행
+                //top_btn에게 클래스명 active추가
+                //조건이 맞지 않으면 top_btn에게 클래스명 active삭제
+
+                if (scrollBar > section1.offsetTop) {
+                    topBtn.classList.add('active');
+                } else {
+                    topBtn.classList.remove('active');
+                }
+            });
+        };//
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header">header</header>
+
+        <main class="main">
+            <section class="main_visual">
+                <img src="img/이미지5.jpg" alt="">
+            </section><!-- main_visual -->
+
+            <section class="section-01">
+                첫번째 섹션
+            </section>
+
+            <section class="section-02">
+                두번째 섹션
+            </section>
+        </main>
+
+        <button class="top_btn">🎃</button>
+
+        <footer class="footer">푸터</footer>
+    </div>
+</body>
+
+</html>

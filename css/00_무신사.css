@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.all{
+    margin: 0 auto;
+    width: 375px;
+    height: 813px;
+    border: 1px solid gray;
+}
+.all .a{
+    width: 375px;
+    height: 190px;
+    background-color: #7aafb3;
+}
+.all .a h1{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 50px 0px 18px 19px;
+    color: white;
+}
+.all .a .empty-box{
+    width: 335px;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0px 20px 14px 20px;
+}
+.all .a span{
+    width: 335px;
+    height: 35px;
+    margin: 0px 20px;
+    padding: 5px 150px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+}
+.all .a ul{
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 15px;
+    margin: 14px 20px 15px 20px;
+}
+.all .a ul li.bar{
+    padding-bottom: 13px;
+    border-bottom: 3px solid white;
+}
+.all .b img{
+    width: 375px;
+    height: 344px;
+    margin-bottom: 18px;
+}
+.all .b .title{
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.all .b .title strong{
+    font-size: 31px;
+}
+.all .b .title p{
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+}
+.all .b .item{
+    width: 375px;
+    display: flex;
+    margin-left: 20px;
+}
+.all .b .item .tee1 img{
+    width: 100px;
+    height: 126px;
+    margin: 0 auto;
+    border-radius: 10px 0px 0px 0px;
+}
+.all .b .item .tee img{
+    width: 100px;
+    height: 126px;
+    margin: 0 auto;
+}
+.all .b .item .tee4 img{
+    width: 30px;
+    height: 126px;
+    margin: 0 auto;
+}
+.all .b .item 

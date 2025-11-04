@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.all{
+    width: 1920px;
+    margin: 0 auto;
+}
+.all img{
+    width: 1920px;
+    height: 772px;
+}
+.all .a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 210px 0 580px;
+}
+.all .a .menu ul{
+    width: 1920px;
+    padding: 15px 210px;
+    display: flex;
+    justify-content: space-between ;
+}
+.all .a .login ul{
+    width: 176px;
+    height: 48px;
+    padding: 15px;
+    font-size: 13px;
+    background-color: #F5F9FF;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+}

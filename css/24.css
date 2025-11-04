@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ .section-01{
+    background: url('../img/trip-4.png') center center / cover no-repeat; 
+    padding: 164px 0 281px;
+ }
+ .section-01 .title{
+    text-align: center;
+ }
+ .section-01 .title h1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 15px;
+ }
+ .section-01 .title p{
+    color: #fff;
+ }
+
+ .section-01 .list .item{
+    display: flex;
+    
+    width: 464px;
+    height: 340px;
+    background-color: #fff;
+ }
+ .section-01 .list .item img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+ }

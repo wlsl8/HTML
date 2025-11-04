@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형슬라이드</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/05.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".sectionSwiper", {
+                slidesPerView: 1.5,
+                spaceBetween: 16,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 4.5,
+                        spaceBetween: 28,
+                    },
+                },
+            });
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 50,
+                    },
+                },
+            });
+        };//script end
+    </script>
+</head>
+
+<body>
+    <section class="section">
+        <h2>section title</h2>
+        <div class="swiper sectionSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image-10.jpg" alt="">
+                    <div class="text">
+                        <strong>슬라이드 제목</strong>
+                        <p>슬라이드 내용 작성 중입니다.</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-11.jpg" alt="">
+                    <div class="text">
+                        <strong>슬라이드 제목</strong>
+                        <p>슬라이드 내용 작성 중입니다.</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-12.jpg" alt="">
+                    <div class="text">
+                        <strong>슬라이드 제목</strong>
+                        <p>슬라이드 내용 작성 중입니다.</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-13.jpg" alt="">
+                    <div class="text">
+                        <strong>슬라이드 제목</strong>
+                        <p>슬라이드 내용 작성 중입니다.</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-14.jpg" alt="">
+                    <div class="text">
+                        <strong>슬라이드 제목</strong>
+                        <p>슬라이드 내용 작성 중입니다.</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-15.jpg" alt="">
+                    <div class="text">
+                        <strong>슬라이드 제목</strong>
+                        <p>슬라이드 내용 작성 중입니다.</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+
+            </div><!-- swiper-wrapper end -->
+            <div class="swiper-pagination"></div>
+        </div><!-- swiper sectionSwiper end -->
+    </section><!-- section end -->
+
+
+    <section class="section-02">
+        <h2>section title</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/image-16.jpg" alt="">
+                    <div class="text">
+                        <strong>slide title</strong>
+                        <p>silde item</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-17.jpg" alt="">
+                    <div class="text">
+                        <strong>slide title</strong>
+                        <p>silde item</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-18.jpg" alt="">
+                    <div class="text">
+                        <strong>slide title</strong>
+                        <p>silde item</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-19.jpg" alt="">
+                    <div class="text">
+                        <strong>slide title</strong>
+                        <p>silde item</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-20.jpg" alt="">
+                    <div class="text">
+                        <strong>slide title</strong>
+                        <p>silde item</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/image-9.jpg" alt="">
+                    <div class="text">
+                        <strong>slide title</strong>
+                        <p>silde item</p>
+                    </div><!-- text end -->
+                </div><!-- swiper-slide end -->
+            </div><!-- swiper-wrapper end -->
+            <div class="swiper-pagination"></div>
+        </div><!-- swiper mySwiper end -->
+    </section><!-- section-02 end -->
+</body>
+
+</html>

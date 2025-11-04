@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.list{
+    width: 1920px;
+    margin: 160px auto;
+}
+.list .title {
+    display: flex;
+    margin-bottom: 30px;
+}
+.list .title h1{
+    font-size: 45px;
+}
+.list .title p{
+    align-content: center;
+   
+    right: 0;
+}
+.list .item{
+    width: 1279px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+.list .item .song{
+    width: 562px;
+    height: 189px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.list .item .song img{
+    margin-right: 30px;
+}
+.list .item .song .text{
+    margin-top: 30px;
+}
+.list .item .song .text strong{
+    font-size: 20px;
+}
+.list .item .song .text p{
+    margin-top: 60px; 
+}

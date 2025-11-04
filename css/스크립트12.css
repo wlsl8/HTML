@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import url('reset.css');
+
+.header{
+    height: 100px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_visual{
+    height: 100vh;
+}
+.main_visual img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-01{
+    height: 100vh;
+    background-color: rgb(216, 192, 160);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-02{
+    height: 100vh;
+    background-color: rgb(117, 99, 75);
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top_btn{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(55, 102, 40);
+    border-radius: 8px;
+    position: fixed;
+    right: 80px;
+    bottom: 80px;
+    border: 2px solid #333;
+    display: none;
+}
+.top_btn.active{
+    display: block;
+}

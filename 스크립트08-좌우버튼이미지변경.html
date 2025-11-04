@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좌우버튼이미지변경</title>
+    <link rel="stylesheet" href="css/스크립트08.css">
+    <script>
+        window.onload = () => {
+            let box = document.getElementsByClassName('box')[0];
+            let boxImage = box.getElementsByTagName('img')[0];
+            let boxPrev = box.getElementsByClassName('prev')[0];
+            let boxNext = box.getElementsByClassName('next')[0];
+
+            let boxNum = box.getElementsByClassName('num')[0];
+            let boxAllNum = box.getElementsByClassName('all_num')[0];
+
+            let i = 0;
+            let imageList = ['img/이미지1.jpg', 'img/이미지2.jpg', 'img/이미지3.jpg', 'img/이미지4.jpg']
+
+            //다음 버튼을 클릭했을 때 실행
+            //1씩 증가시켜주기
+            //img의 src값을 변수 imageList의 index(순서)값으로 나올 수 있도록 작성
+
+            /* length => 개수, 길이 값 구할 수 있음 */
+
+            console.log(imageList.length)
+
+            //전체 이미지 수 작성 => all_num
+            boxAllNum.innerHTML='/'+/* <-문자 연결 */imageList.length;
+            //boxAllNum.innerHTML='<b>/</b>'+/* <-문자 연결 */imageList.length;
+
+            boxNext.addEventListener('click', () => {
+                i++;
+                if (i >= imageList.length/* =4 */) {
+                    i = 0;
+                };
+                boxImage.src = imageList[i];
+                boxNum.innerHTML=i+1;
+            });
+            boxPrev.addEventListener('click', () => {
+                i--;
+                if (i < 0) {
+                    i = imageList.length - 1;//=3과 동일  /* 1부터 시작이 아니라 0, 1, 2, 3순이기때문에 3을 작성 */
+                };
+                boxImage.src = imageList[i];
+                boxNum.innerHTML=i+1;
+            });
+        }; //end
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img/이미지1.jpg" alt="">
+        <div class="btn">
+            <button class="prev">이전</button>
+            <button class="next">다음</button>
+        </div>
+
+
+        <div class="page">
+            <span class="num">1</span>
+            <span class="all_num"></span>
+        </div><!-- page end -->
+
+    </div><!-- box end -->
+</body>
+
+</html>

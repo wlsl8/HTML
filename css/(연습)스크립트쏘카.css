@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #141A24;
+}
+
+.section-01{
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+.section-01 video{
+    width: 100%
+}
+.section-01 .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+.section-01 .title h1{
+    font-size: 95px;
+}
+.section-01 .title p{
+    font-size: 40px;
+}
+.section-01 .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.section-01 .header .logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 18px 192px;
+}
+.section-01 .header .logo img{
+    height: 36px;
+}
+.section-01 button{
+    position: absolute;
+    bottom: 60px;
+    right: 192px;
+    width: 228px;
+    height: 72px;
+    background-color: #0078FF;
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-01 button img{
+    width: 18px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+
+.section-02{
+    width: 1012px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-02 .title{
+    color: #fff;
+    width: 100%;
+    margin-top: 160px;
+}
+.section-02 .title h2{
+    font-size: 37px;
+    font-weight: 300;
+}
+.section-02 .title h3{
+    font-size: 37px;
+    font-weight: bold;
+}
+.section-02 .list .item{
+    position: relative;
+    margin-top: 96px;
+}
+.section-02 .list .item img{
+    width: 1012px;
+    height: 524px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-bottom: 256px;
+}
+.section-02 .list .item .text{
+    color: #fff;
+    position: absolute;
+    top: 48px;
+    left: 48px;
+}
+.section-02 .list .item .text b{
+    font-size: 33px;
+    font-weight: bold;
+}
+.section-02 .list .item .text p{
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+
+.section-03{
+    width: 1013px;
+    margin: 0 auto;
+}
+.section-03 .title{
+    color: #fff;
+}
+.section-03 .title h2{
+    font-size: 37px;
+    font-weight: 300;
+}
+.section-03 .title h3{
+    font-size: 37px;
+    font-weight: bold;
+}
+.section-03 .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.section-03 .list .item img{
+    width: 488px;
+    height: 647px;
+    object-fit: cover;
+    border-radius: 16px;
+}

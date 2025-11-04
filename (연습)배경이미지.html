@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지연습</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+
+        .aa{
+            width: 1920px;
+            margin: 0 auto;
+            padding: 100px 212px;
+            background-color:antiquewhite;
+        }
+        .aa h1{
+            margin-bottom: 40px;
+        }
+        .aa .list{
+            display: flex;
+            justify-content: space-between;
+        }
+        .aa .list .item{
+            width: 352px;
+        }
+        .aa .list .item img{
+            width: 352px;
+            border-radius: 20px;
+        }
+        .aa .list .item b{
+            font-size: 22px;
+            line-height: 2.8;
+        }
+
+        .bb{
+            width: 1920px;
+            margin: 0 auto;
+            padding: 80px 162px;
+            background-color: aquamarine;
+        }
+        .bb h1{
+            margin-bottom: 32px;
+        }
+        .bb .list ul{
+            width: 511px;
+            display: flex;
+            margin: 0 0 32px 0;
+        }
+        .bb .list ul li{
+            width: 130px;
+            height: 50px;
+            margin-right: 12px;
+            border: 1px solid black;
+            border-radius: 40px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .bb .list ul li:nth-child(1){
+            background-color: blueviolet;
+            color: white;
+        }
+        .bb .list ul li:nth-child(2){
+            background-color: white;
+        }
+        .bb .list ul li:nth-child(3){
+            background-color: white;
+        }
+        .bb .list ul li:nth-child(4){
+            background-color: white;
+        }
+         
+        .bb .list .item{
+            width: 1596px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bb .list .item .zip{
+            width: 380px;
+            background-color: white;
+        }
+        .bb .list .item .zip img{
+            width: 340px;
+            height: 451px;
+            margin: 20px;
+        }
+        .bb .list .item .zip .text{
+            padding:0 0 20px 20px
+        }
+        .bb .list .item .zip .text b{
+            font-size: 20px
+        }
+        .bb .list .item .zip .text p{
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aa">
+        <h1>새미네 부엌</h1>
+    <div class="list">
+        <div class="item">
+            <img src="img/7/image_box.jpg" alt="">
+            <b>기본반찬 숙주나물</b>
+            <p>알맞은 식감의 숙주나물 만드는 비법!</p>
+        </div><!-- item end -->
+
+        <div class="item">
+            <img src="img/7/image_box-1.jpg" alt="">
+            <b>홈메이드 마늘빵</b>
+            <p>아이, 어른 모두 좋아하는 국민 간식</p>
+        </div><!-- item end -->
+
+        <div class="item">
+            <img src="img/7/image_box-2.jpg" alt="">
+            <b>애호박 볶음</b>
+            <p>애호박으로 즐기는 기본반찬</p>
+        </div><!-- item end -->
+
+        <div class="item">
+            <img src="img/7/image_box-3.jpg" alt="">
+            <b>시원칼칼 만두전골</b>
+            <p>때로는 깔끔하게, 때로는 매콤하게</p>
+        </div><!-- item end -->
+        
+    </div><!-- list end -->
+    </div><!-- aa end -->
+
+
+    <div class="bb">
+        <h1>대한민국 구석구석 지역</h1>
+        <div class="list">
+            <ul>
+                <li>통합인기순</li>
+                <li>tmap인기순</li>
+                <li>거리순</li>
+                <li>테마순</li>
+            </ul>
+            <div class="item">
+            <div class="zip">
+                <img src="img/7/image.jpg" alt="">
+                <div class="text">
+                    <b>소복소복 꽃눈이 내리는,<br>전국 이팝나무 명소.zip</b>
+                    <p>5월에 가기 좋은 전국 이팝나무 명소 모음</p>
+                </div><!-- text end -->
+                </div><!-- zip end -->
+            <div class="zip">
+                <img src="img/7/image-1.jpg" alt="">
+                <div class="text">
+                    <b>취향따라 떠나요!<br>전라도&경상도 야경 명소 8</b>
+                    <p>별 보러 갈까? 물 보러 갈까? </p>
+                </div><!-- text end -->
+            </div><!-- zip end -->
+            <div class="zip">
+                <img src="img/7/image-2.jpg" alt="">
+                <div class="text">
+                <b>제주도의 시간을 품은 돌<br>자연이 빚은 이색 여행지 추천</b>
+                <p>제주 이색 테마 여행지 추천 3</p>
+                </div><!-- text end -->
+            </div><!-- zip end -->
+            <div class="zip">
+                <img src="img/7/image-3.jpg" alt="">
+                <div class="text">
+                <b>해변 승마부터 청보리밭까지!<br>고창에서의 특별한 하루</b>
+                <p>고창의 숨은 보물, 명사십리에서 즐기는 해변 승마</p>
+                </div><!-- text end -->
+            </div><!-- zip end -->
+            </div><!-- item end -->
+        </div><!-- list end -->
+    </div><!-- bb end -->
+</body>
+</html>

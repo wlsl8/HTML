@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭메뉴</title>
+    <link rel="stylesheet" href="css/스크립트14.css">
+    <script>
+        window.onload = () => {
+            let tabMenu = document.querySelectorAll('.tab_menu li');
+            let tabCont = document.querySelectorAll('.list');
+
+
+            for (let i = 0; i < tabMenu.length; i++) {
+                tabMenu[i].addEventListener('click', () => {
+                    
+                    tabMenu.forEach(tabMenuIndex => {
+                        tabMenuIndex.classList.remove('active');
+                    });
+                    tabMenu[i].classList.add('active');
+                    /*  tabCont[0].classList.remove('active');
+                        tabCont[1].classList.remove('active'); */
+                    //forEach() : 반복적으로 구성된 배열을 실행
+
+                    //tabContIndex=[tabCont[0], tabCont[1]]
+                    tabCont.forEach(tabContIndex => {
+                        tabContIndex.classList.remove('active');
+                    });
+                    tabCont[i].classList.add('active');
+                });
+
+            };
+        };//end
+    </script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="inner">
+            <h3>tab content</h3>
+            <ul class="tab_menu">
+                <li>menu1</li>
+                <li>menu2</li>
+                
+            </ul><!-- tab_menu end -->
+
+            <div class="list active">
+                <div class="item">
+                    <img src="img/이미지1.jpg" alt="">
+                    <strong>item 1</strong>
+                </div><!-- item end -->
+                <div class="item">
+                    <img src="img/이미지2.jpg" alt="">
+                    <strong>item 2</strong>
+                </div><!-- item end -->
+                <div class="item">
+                    <img src="img/이미지3.jpg" alt="">
+                    <strong>item 3</strong>
+                </div><!-- item end -->
+                <div class="item">
+                    <img src="img/이미지4.jpg" alt="">
+                    <strong>item 4</strong>
+                </div><!-- list end -->
+            </div><!-- list end -->
+
+            <div class="list">
+                <div class="item">
+                    <img src="img/이미지5.jpg" alt="">
+                    <strong>item 5</strong>
+                </div><!-- item end -->
+                <div class="item">
+                    <img src="img/이미지6.jpg" alt="">
+                    <strong>item 6</strong>
+                </div><!-- item end -->
+                <div class="item">
+                    <img src="img/이미지7.jpg" alt="">
+                    <strong>item 7</strong>
+                </div><!-- item end -->
+                <div class="item">
+                    <img src="img/이미지8.jpg" alt="">
+                    <strong>item 8</strong>
+                </div><!-- item end -->
+            </div><!-- list end -->
+        </div><!-- inner end -->
+    </section><!-- section end -->
+</body>
+
+</html>

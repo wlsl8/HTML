@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지값적용</title>
+    <link rel="stylesheet" href="css/스크립트16.css">
+    <script>
+        window.onload=()=>{
+            let section=document.querySelector('.section');
+            let item=section.querySelectorAll('.item');
+            let itemImage=section.querySelectorAll('.item_image');
+
+            //for
+            //item에게 마우스 올렸을때 (mouseenter)
+            //section에게 스타일적용 backgroundImage의 값을 적용
+            //= 'url(파일명.확장자명)'
+            for(let i=0; i<item.length; i++){
+                item[i].addEventListener('mouseenter', ()=>{
+                    console.log(itemImage[i].src)
+                    //section.style.backgroundImage='url("img/이미지-1.jpg")';
+                    section.style.backgroundImage='url('+itemImage[i].src+')'
+                });
+            };
+        };//end
+    </script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="inner">
+            <h3>section title</h3>
+            <div class="list">
+                <div class="item">
+                    <img src="img/이미지1.jpg" alt="" class="item_image">
+                    <div class="text">
+                        <h2>item 1</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod eveniet id sint harum iste,
+                            quaerat eos quo recusandae iusto doloribus delectus laudantium quos quisquam vel, aliquid
+                            accusantium in, omnis voluptate.</p>
+                    </div><!-- text -->
+                </div><!-- item -->
+                <div class="item">
+                    <img src="img/이미지2.jpg" alt="" class="item_image">
+                    <div class="text">
+                        <h2>item 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ut dolore optio earum ipsum
+                            cupiditate? Fuga expedita, ex illum laboriosam commodi nisi dolor consequatur repudiandae,
+                            esse dignissimos ut doloribus amet.</p>
+                    </div><!-- text -->
+                </div><!-- item -->
+                <div class="item">
+                    <img src="img/이미지3.jpg" alt="" class="item_image">
+                    <div class="text">
+                        <h2>item 3</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum perferendis ratione sit
+                            alias et harum, adipisci eveniet blanditiis modi laboriosam veniam in voluptas eius
+                            repellendus! Voluptates doloribus quasi ipsam doloremque.</p>
+                    </div><!-- text -->
+                </div><!-- item -->
+                <div class="item">
+                    <img src="img/이미지4.jpg" alt="" class="item_image">
+                    <div class="text">
+                        <h2>item 4</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab repellat quos rerum
+                            facere minus ducimus modi in illo porro, consectetur adipisci eum, fuga accusamus at amet
+                            consequatur? Amet, culpa!</p>
+                    </div><!-- text -->
+                </div><!-- item -->
+            </div><!-- list -->
+        </div><!-- inner -->
+    </section>
+</body>
+
+</html>

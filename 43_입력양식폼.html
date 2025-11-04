@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력양식폼</title>
+</head>
+
+<body>
+    <h2>입력 양식 데이터 전송</h2>
+    <form action="page.jsp" method="post">
+        <p>ID : <input type="text" name="id" id=""></p>
+        <p>PW : <input type="password" name="psw" id=""></p>
+        <lable for="form-name">이름</lable>
+        <input type="text" name="name" id="form-name" required placeholder="이름을 입력해주세요">
+        <textarea name="" id="" rows="5"
+            cols="20"></textarea><!-- 크기조절 (rows=> 5줄(세로 줄 수), cols=> 20자(가로 글자 수 (영문기준)) 입력가능) -->
+
+
+        <h3>당신의 강의실은 몇호입니까</h3>
+        <div class="radio">
+            <label for="1">1001호</label>
+            <input type="radio" name="calssroom" value="room1" id="1">
+            <!-- for이랑 id를 같은 값으로 입력하면 체크박스가 아닌 텍스트를 클릭해도 체크박스가 선택됨 -->
+
+            <label for="2">1002호</label>
+            <input type="radio" name="calssroom" value="room2" id="2">
+
+            <label for="3">1003호</label>
+            <input type="radio" name="calssroom" value="room3" id="3">
+
+            <label for="4">1004호</label>
+            <input type="radio" name="calssroom" value="room4" id="4">
+        </div><!-- radio end -->
+
+
+        <div class="check">
+            <h3>현재 관심을 가지고 있는 학습 주제는 무엇입니까?</h3>
+            <label for="">html5</label>
+            <input type="checkbox" name="subject" value="html5" id="" checked>
+
+            <label for="">css3</label>
+            <input type="checkbox" name="subject" value="css3" id="">
+
+            <label for="">javascript</label>
+            <input type="checkbox" name="subject" value="javascript" id="">
+
+            <label for="">jquery</label>
+            <input type="checkbox" name="subject" value="jquery" id="">
+
+        </div><!-- check end -->
+
+
+        <div class="button">
+            <h3>button 태그 사용</h3>
+            <button type="button">버튼태그</button> <!-- 버튼태그랑 a태그는 함께 사용 불가 -->
+
+            <h3>input 태그 사용</h3>
+            <input type="button" value="input태그">
+        </div><!-- button end -->
+
+
+        <div class="select">
+            <h3>관심 있는 학습 주제 한 가지를 선택하세요.</h3>
+            <select name="subject" id="">
+                <option value="1" selected>html5</option> <!-- html5를 선택하고 전송을 하면 html이 전송되는게 아니라 value값인 1이 전송이 됨 -->
+                <option value="2">css3</option>
+                <option value="3">javascript</option>
+                <option value="4">jquery</option>
+            </select>
+        </div><!-- select end -->
+
+
+        <div class="select-link">
+            <h3>관련 사이트</h3>
+            <select name="" id="" onchange="window.open(value, '_blank')"> <!-- onchange는 선택이 바뀔 때 작동하는 속성 -->
+                <option value="">관련사이트</option>
+                <optgroup>
+                    <option value="https://www.naver.com/">네이버</option>
+                    <option value="https://www.gdweb.co.kr">gdweb</option>
+                    <option value="https://www.w3school.com/">w3school</option>
+                </optgroup>
+            </select>
+        </div><!-- select-link end -->
+
+
+
+        <h포>숫자 입력 폼</h3>
+        <input type="number" name="" id="">
+
+        <h3>날짜 양식</h3>
+        <input type="date" name="" id="" value="2025-01-01"><!-- 현재 날짜와 시간으로 설정하고싶으면 자바스크립트 작성해야함 -->
+
+        <h3>시간 양식</h3>
+        <input type="time" name="" id="" value="09:00">
+
+        <h3>색상선택 양식</h3>
+        <input type="color" name="" id="" value="#ff0000">
+
+        <h3>이메일 입력 양식</h3>
+        이메일 : <input type="email" name="" id="">
+
+        
+        <input type="submit" value="전송">
+        <input type="reset" value="다시작성">
+    </form>
+</body>
+
+</html>

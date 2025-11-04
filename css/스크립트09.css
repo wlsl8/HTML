@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.list .item{
+    font-size: 20px;
+    margin: 20px;
+}
+.list .item.active{
+    color: blueviolet;
+}
+.btn{
+    padding: 5px 15px;
+    margin: 20px;
+    font-size: 20px;
+}

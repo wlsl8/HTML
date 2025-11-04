@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url('reset.css');
+
+*{
+    cursor:none;
+}
+
+.cursor{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(28, 60, 128);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: 0.1s linear;
+    mix-blend-mode: difference; /* multiply: 블랜딩 모드, difference: 색상반전 */
+}
+.cursor.scale{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cursor.scale::before{
+    content: 'drag';
+    color: #fff;
+}
+.header{
+    line-height: 100px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.item{
+    width: 400px;
+    margin: 100px auto;
+}
+.item a img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.item a p{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 8px;
+}

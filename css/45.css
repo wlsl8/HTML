@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.image img{
+    width: 500px;
+}
+
+.svg_image svg:hover path{
+fill: rgb(73, 90, 148);
+}
+
+.svg_image-02{
+    position: relative;
+}
+.svg_image-02 p{
+    width: 50px;
+    height: 50px;
+    background-color: seagreen;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    offset: path('M40.3997 98L0 74.7145L29.7768 23.2856L70.2 46.5308L70.2228 0H129.777L129.8 46.5308L170.223 23.2856L200 74.7145L159.6 98L200 121.285L170.223 172.715L129.8 149.469L129.777 196H70.2228L70.2 149.469L29.7768 172.715L0 121.285L40.3997 98Z');
+    animation: svgimage 10s infinite linear;
+}
+
+@keyframes svgimage {
+    0%{
+        offset-distance: 0;
+    }
+    100%{
+        offset-distance: -100%;
+    }
+}

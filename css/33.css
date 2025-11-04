@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.box div{
+    width: 500px;
+    height: 50px;
+    border: 1px solid #333;
+    line-height: 50px;
+    text-align: center;
+    margin: 30px;
+}
+.box div:first-child:hover{
+    width: 700px;
+    background-color: aquamarine;
+    transition: all 0.7s;
+}
+.box div:nth-child(2):hover{
+    height: 500px;
+    background-color: beige;
+    transition: background-color 2s;
+}
+.box div:nth-child(3):hover{
+    height: 500px;
+    background-color: blue;
+    transition: all 1s 2s;
+}
+.box div:nth-child(4):hover{
+    height: 200px;
+    background-color: blueviolet;
+    transition: height 2s linear;
+    /* ease(기본값) : 느리게 시작 빨라졌다가 다시 느려짐
+    linear : 일정속도 유지
+    ease-in : 점점 빨라짐
+    ease-out : 점점 느려짐
+    ease-in-out : 처음과 끝이 느림 */
+}
+.box div:last-child:hover{
+    width: 700px;
+    height: 300px;
+    background-color: yellowgreen;
+    transition: width 1s,
+                height 1s 1s;
+}

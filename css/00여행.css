@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    width: 1920px;
+    height: 932px;
+    background-color: antiquewhite;
+    background-image: url('../img/trip-4.png');
+}
+.title{
+    text-align: center;
+    padding-top: 164px;
+    color: white;
+    padding-bottom: 65px;
+}
+.title h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.list{
+    display: flex;
+    justify-content: space-between; 
+    margin: 0px 240px;
+}
+.list .item{
+    width: 464px;
+    height: 340px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    align-items:  center;
+}
+.list .item img{
+    margin-right: 40px;
+}
+.list .item .name{
+    display: flex;
+    flex-direction: column;
+}
+.list .item .name strong{
+    width: 71px;
+    height: 28px;
+    background-color: orange;
+    border-radius: 30px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 49px;
+    text-align: center;
+    line-height: 28px;
+}
+.list .item .name p{
+    font-size: 14px;
+    margin-top: 10px;
+} 

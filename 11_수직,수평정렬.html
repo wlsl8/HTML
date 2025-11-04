@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수직수평정렬</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .box{
+            width: 338px;
+            height: 108px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.452);
+            margin: 100px auto;
+            border-radius: 8px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box img{
+            width: 71px;
+        }
+        .list{
+            width: 338px;
+            height: 108px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.425);
+            margin: 100px auto;
+            border-radius: 8px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .list .info{
+            display: flex;
+            align-items: center;
+        }
+        .list .info img{
+            width: 71px;
+        }
+        .list-02{
+            width: 338px;
+            height: 108px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.425);
+            margin: 100px auto;
+            border-radius: 8px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .list-02 .info{
+            display: flex;
+        }
+        .list-02 .info .text span{
+            display: block;
+            font-size: 14px;
+            color: grey;
+        }
+        .list-02.info text strong{
+            line-height: 1.3;
+        }
+        .list-02 .info img{
+            width: 71px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="img/image-4.jpg" alt="">
+        <p>이미지 제목 작성</p>
+        <a href="#">보기</a>
+    </div><!-- box end -->
+
+    <div class="list">
+        <div class="info">
+            <img src="img/image-3.jpg" alt="">
+            <p>이미지 제목 작성</p>
+        </div><!-- info end -->
+        <a href="#">보기</a>
+    </div><!-- list end -->
+
+
+    <div class="list-02">
+        <div class="info">
+            <img src="img/image-1.jpg" alt="">
+            <div class="text">
+                <span>소스내추럴</span>
+                <strong>메가 스트렝스 베타<br>
+                시토스테롤</strong>
+            </div><!-- text end -->
+        </div><!-- info end -->
+        <a href="#">보기</a>
+    </div><!-- list-02 end -->
+</body>
+</html>

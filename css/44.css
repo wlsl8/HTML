@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form{
+    max-width: 800px;
+    width: calc(100% - 40px);
+    margin: 50px auto;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+.form .box label{
+    display: block;
+}
+.form .box input[type="text"],
+.form .box input[type="password"]{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+.form .box input::placeholder{
+    font-size: 14px;
+    color: gray;
+}
+.form .box input:focus{
+    outline: 3px solid red;
+    border: 0; /* 원래있던 테두리 없애기 */
+    /*<두번째 스타일> 
+    outline: none;
+    border: 3px dashed red;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); */
+}/* tep키 사용시 포커스 한테 스타일 적용되는 것 */
+
+.form .check ul{
+    display: flex;
+    gap: 12px;
+}
+.form .check ul li input{
+    display: none;
+}
+.form .check ul li label{
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form .check ul li input:checked + label{
+    border: 1px solid tomato;
+}/* html에서 label밑에 input이었는데 이걸 자리를 바꿔서 input을 위로 label을 아래로 배치하고, id값과 for값 무조건 있어야 적용가능 */

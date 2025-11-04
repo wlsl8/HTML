@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지여러개변경</title>
+    <link rel="stylesheet" href="css/스크립트07.css">
+    <script>
+        window.onload=()=>{
+            let boxBtn = document.getElementsByClassName('btn')[0];
+            let boxImage = document.getElementsByTagName('img')[0];
+            let boxText =document.getElementsByClassName('text')[0];
+
+            let i=0;
+
+            //배열 : 하나의 변수안에 여러개의 데이터 값을 순서대로 저장  /* 첫번째 부터 인덱스값 [0],[1],[2] 순 */
+            let imageList=['img/이미지1.jpg', 'img/이미지2.jpg', 'img/이미지3.jpg', 'img/이미지4.jpg']
+            let TextList=['이미지1', '이미지2', '이미지3', '이미지4']
+            boxBtn.addEventListener('click', () => {
+                i++; //1씩 증가
+                //console.log(i);
+                //imageList[1] //imageList에 있는 두번째 이미지파일
+                //imageList[2]
+                //imageList[i]
+
+                /*  i값이 4보다 크거나 같을 때 (>=)
+                i값은 0*/
+                if(i>=4){
+                    i=0;
+                }
+
+                //img의 src값을 변수명 imageList가 가지는 값 순서대로 불러오도록 설정
+                boxImage.src=imageList[i];
+                boxText.innerHTML=TextList[i];
+            });
+        };
+    </script>
+</head>
+<body>
+    <div class="box">
+        <button class="btn">버튼</button>
+            <img src="img/이미지1.jpg" alt="">
+            <p class="text">이미지1</p>
+    </div>
+</body>
+</html>

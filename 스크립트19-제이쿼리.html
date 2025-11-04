@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리</title>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            let text1 = document.querySelector('.text-01');
+            text1.addEventListener('click', ()=>{
+                alert();
+            });
+
+            let text2 = $('.text-02');
+            text2.on('click', function(){
+                alert();
+            });
+        });//script end
+    </script>
+</head>
+<body>
+    <p class="text-01">텍스트 1</p>
+    <p class="text-02">텍스트 2</p>
+    <button type="button">버튼</button>
+    
+</body>
+</html>

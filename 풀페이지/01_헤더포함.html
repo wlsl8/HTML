@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더포함</title>
+    <link rel="stylesheet" href="lib/fullpage.css">
+    <link rel="stylesheet" href="css/01.css">
+    <script src="lib/fullpage.js"></script>
+    <script>
+        window.onload = () => {
+            var myFullpage = new fullpage('#fullpage', {
+                /* sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'], */
+                anchors: ['firstPage', 'secondPage', '3rdPage'],
+                navigation: true, /* 활성화=>true, 비활성화=>false */
+                navigationTooltips: ['Page 1', 'Page 2', 'Any text!'],
+                showActiveTooltip: true, /* true=>계속보여짐 , false=>마우스를 올리면 보여짐 */
+                /* menu: '#menu' */
+            });
+        };//end
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <p>헤더</p>
+    </header><!-- heade -->
+
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="intro">
+                <h1>Section 1</h1>
+                <p>
+                    Use the `navigationTooltips` option to use a text for each of the bullets in the navigation element.
+                </p>
+            </div>
+        </div><!-- section -->
+
+        <section class="section" id="section1">
+            <div class="inner">
+                <h2>두번째 섹션</h2>
+                <div class="list">
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor et accusantium
+                            reiciendis nemo accusamus, molestias aperiam aspernatur, reprehenderit tempore, earum
+                            debitis odit laboriosam minima facilis tenetur odio nostrum. Quae.</p>
+                    </div><!-- item -->
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor et accusantium
+                            reiciendis nemo accusamus, molestias aperiam aspernatur, reprehenderit tempore, earum
+                            debitis odit laboriosam minima facilis tenetur odio nostrum. Quae.</p>
+                    </div><!-- item -->
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor et accusantium
+                            reiciendis nemo accusamus, molestias aperiam aspernatur, reprehenderit tempore, earum
+                            debitis odit laboriosam minima facilis tenetur odio nostrum. Quae.</p>
+                    </div><!-- item -->
+                    <div class="item">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolor et accusantium
+                            reiciendis nemo accusamus, molestias aperiam aspernatur, reprehenderit tempore, earum
+                            debitis odit laboriosam minima facilis tenetur odio nostrum. Quae.</p>
+                    </div><!-- item -->
+                </div><!-- list -->
+            </div><!-- inner -->
+        </section>
+
+        <div class="section" id="section2">
+            <div class="inner">
+                <div class="item">
+                    <div class="image">
+                        <img src="img/이미지4.jpg" alt="">
+                    </div><!-- image -->
+                    <strong>item 1</strong>
+                </div><!-- item -->
+                <div class="item">
+                    <div class="image">
+                        <img src="img/이미지5.jpg" alt="">
+                    </div><!-- image -->
+                    <strong>item 2</strong>
+                </div><!-- item -->
+                <div class="item">
+                    <div class="image">
+                        <img src="img/이미지6.jpg" alt="">
+                    </div><!-- image -->
+                    <strong>item 3</strong>
+                </div><!-- item -->
+                <div class="item">
+                    <div class="image">
+                        <img src="img/이미지7.jpg" alt="">
+                    </div><!-- image -->
+                    <strong>item 4</strong>
+                </div><!-- item -->
+            </div><!-- inner -->
+        </div><!-- section -->
+
+        <footer class="footer section fp-auto-height" id="footer">
+            <p>푸터</p>
+        </footer>
+    </div><!-- fillpage -->
+</body>
+
+</html>

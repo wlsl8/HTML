@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    animation-name: animationball;
+
+    animation-iteration-count: infinite;
+    /* 애니메이션 횟수 */
+    /* infinite(반복) or 숫자 */
+
+    animation-timing-function: linear;
+    /* 애니메이션 움직임 */
+
+    animation-duration: 3s;
+    /* 애니메이션 시간 */
+
+    animation-direction: alternate;
+    /* 애니메이션 방향 */
+    /* altermate : 정방향에서 번갈아가며 움직임
+       reverse : 반대방향에서 시작
+       altermate-reverse : 반대방향에서 번갈아가며 움직임 */
+}
+
+/* @keyframes 애니메이샨이름 {실행문} */
+@keyframes animationball {
+    /* 시작 */
+    0% {
+        width: 150px;
+    }
+    /* 중간 */
+    50%{
+        transform: translate(50px, 100px);
+        height: 200px;
+        border-radius: 50%;
+    }
+    /* 끝 */
+    100%{
+        width: 200px;
+        background-color: beige;
+        transform: translateX(150px);
+    }
+}
+
+
+.text{
+    background-color: rgb(57, 80, 119);
+    color: white;
+    font-size: 40px;
+    margin-top: 300px;
+    overflow: hidden;
+}
+.text ul{
+    display: flex;
+    animation: textslide 5s infinite alternate linear;
+}
+.text ul li{
+    white-space: nowrap;
+}
+
+@keyframes textslide{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

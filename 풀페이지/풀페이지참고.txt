@@ -1,0 +1,7 @@
+fullpage 사용 시
+body => line-height값 작성x
+aos 금지
+header => #fullpage밖에 작성
+examples / navigation-tooltips.html
+examples / auto-heigh.html
+반응형=> examples / responsive-aito-height.html
